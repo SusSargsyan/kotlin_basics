@@ -8,6 +8,5 @@ fun main() {
     println(a)
     println(b)
     println("Output the sum of squares of given two numbers")
-    println(a * a + b * b)/ : - column
-
+    println(a * a + b * b)
 }
