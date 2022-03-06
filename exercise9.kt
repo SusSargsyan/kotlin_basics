@@ -5,7 +5,7 @@
 // 2 * x^2 + 5 * x + 7 = 0
 fun main() {
     var a  = 6
-	  // 1) var - val, var is can be modified - val is constant it cannot be modified
+    // 1) var - val, var is can be modified - val is constant it cannot be modified
     // 2) : - none, : is used to specify type of variable
     // 3) Int - none, is used to explicitely specificy the type of variable
     // 4) none - "" 
@@ -18,7 +18,7 @@ fun main() {
     println("${a} + ${b} = ${d}")
     // ----
     var a1 = "15"
-   	var b1 = "32"
+    var b1 = "32"
     var c1 = a1 + b1 // 1532
     println("${a1} + ${b1} = ${c1}")
 }
