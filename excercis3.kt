@@ -2,7 +2,7 @@
 // Output the sum of squares of given two numbers
 
 fun main() {
- 	var a :Int = 5
+ 	  var a :Int = 5
     var b :Int = 4
     
     println(a)
