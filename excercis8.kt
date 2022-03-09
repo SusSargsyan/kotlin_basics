@@ -16,8 +16,10 @@ fun printCakeCandles(age: Int) {
     print(" ") // Print the inset of the candles on the cake
     repeat(age) {
         print("|")
-    }
-    fun printCakeTop(age: Int) {
+    }    
+    println()
+}
+fun printCakeTop(age: Int) {
     repeat(age + 2) {
         print("=")
     }
