@@ -1,5 +1,13 @@
-fun main() {
-	 val n:Int = 7
-    	println("$n = 1 * 2 * 3 * 4 * 5 * 6 * 7")
-    
+/**
+ * Given a number n, calculate the factorial of n. 
+ * (Example: 4 factorial is equal to 1 * 2 * 3 * 4.)  …..
+ **/
+
+fun main() { 
+    var n:Int = 10
+    var prod:Int = 1
+    for(i in 1 until n+1) {
+       prod = prod * i 
+    }
+    println(prod)
 }
