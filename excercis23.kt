@@ -12,9 +12,8 @@
 
 
 fun main() {
-	var a:Int = 1
-    
-	for(i in 1..11) {
+    var a:Int = 1
+    for(i in 1..11) {
         println("2^${i - 1} = $a")
     	a = a * 2
     }
