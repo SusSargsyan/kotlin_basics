@@ -16,5 +16,6 @@ fun main() {
    
     
     val result = part2 / part4
+    print(result)
     
 }
