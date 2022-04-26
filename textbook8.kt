@@ -1,5 +1,6 @@
 import kotlin.math.pow
-import kotlin.math.sin
+import kotlin.math.abs
+
 
 
 
@@ -8,21 +9,21 @@ import kotlin.math.sin
  */
 
 fun main() {
-	  val x:Int = 7
-    val y:Int = 5
+    val x:Int = 5
+    val y:Int = 7
+ 
     
     
     val part1 = x.toDouble().pow(2.0) 
     val part2 = y.toDouble().pow(2.0)
-    val part3 = x + 4 
-    val part4 = part2 + 4
-    val part5 = part4.toDouble().pow(3.0)
-    val part6 = part3 / part5
-    val part7 = part6.toDouble().pow(1 / 5) 
-    val part8 = sin(x + part7.toDouble().pow(2.0))
-    val part9 = 3 * part7
-    val part10 = y / part1
+    val part3 = part2 + 4
+    val part4 = part3.toDouble().pow(1 / 3)
+    val part5 = part1 + part4
+    val part6 = part5.toDouble().pow(1 / 4)
+    val part7 = abs(x) + abs(y)
+    val part8 = part7.toDouble().pow(10.0)
     
-    val result = part8 + part9 + part10
+    val result = part6 + part8
     print(result)
+   
 }
