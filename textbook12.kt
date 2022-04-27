@@ -7,7 +7,7 @@ import kotlin.math.log2
  * Textbook - 12 problem
  */
 
-fun exercise11(z:Int, a:Int):Double {
+fun exercise12(z:Int, a:Int):Double {
     var result:Double = 0.0
 	if(abs(a.toDouble()) > 3) {
         val part1 = a.toDouble().pow(2.0) + 4
@@ -27,16 +27,16 @@ fun exercise11(z:Int, a:Int):Double {
  fun main() {
      var z:Int = 1
      var a:Int = 6
-     val result1 = exercise11(z, a)	
+     val result1 = exercise12(z, a)	
      println(result1)
    
      z = 7
      a = 2
-     val result2 = exercise11(z, a)	
+     val result2 = exercise12(z, a)	
      println(result2)
 	
      z = 3
      a = -9
-     val result3 = exercise11(z, a)	
+     val result3 = exercise12(z, a)	
      println(result3)
  }
