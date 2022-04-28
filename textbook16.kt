@@ -2,7 +2,7 @@ import kotlin.math.pow
 import kotlin.math.sin
 import kotlin.math.log2
 import kotlin.math.abs
-import kotlin.math.cos
+import kotlin.math.tan
 
 
 
@@ -10,13 +10,23 @@ import kotlin.math.cos
  * Textbook - 16 problem
  */
 fun exercise16(x:Int, a:Int, b:Int): Double {
+    var result:Double = 0.0
     val cond:Double = a.toDouble().pow(2.0) + b.toDouble().pow(2.0)
+    var e:Int = 1
     if(cond > 5) {
-        println("branch 1")
+       val part1 =  log2(x.toDouble() + a.toDouble() + b.toDouble() + 5)
+       val part2 =  a - x 
+       val part3 = 3 * e.toDouble().pow(part2)
+       result = part3 +part1
+        
     } else if(cond < 1) {
-        println("branch 2")
+       val part1 = a.toDouble() + b.toDouble()
+       val part2 = tan(part1)  
+       val part3= part2.toDouble().pow(4.0)
+       result = part3
     } else {
-        println("branch else")  
+        val part1 = -3.toDouble()
+        result = part1
     }
    
     return 0.0
