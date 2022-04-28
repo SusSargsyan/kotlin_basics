@@ -24,7 +24,7 @@ fun exercise19(a:Int, b:Int): Double {
          result = part1
     }
    
-    return 0.0
+    return result
 }
 
 
