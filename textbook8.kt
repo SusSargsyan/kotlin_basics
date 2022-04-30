@@ -12,8 +12,6 @@ fun main() {
     val x:Int = 5
     val y:Int = 7
  
-    
-    
     val part1 = x.toDouble().pow(2.0) 
     val part2 = y.toDouble().pow(2.0)
     val part3 = part2 + 4
