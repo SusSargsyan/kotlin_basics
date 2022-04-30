@@ -1,24 +1,29 @@
 // Write a program which calculates sum  of squares
 // from 1..n numbers with function returning the sum
-
+import kotlin.math.pow
 
 fun sum(n:Int):Int {
-    var n:Int = 10
     var sum:Int = 0
-    var a:Int = 1
     for(i in 1..n) {
-       
-    	a = a * 2
-        sum = sum + a
+        sum = sum + i * i
     }
-        
-    
-	return sum
-    
+    return sum
 }
 
 fun main() {
-    var n:Int = 10
-	println(sum(10))
-   
+    var n:Int = 2
+    var result = sum(n)
+    if(result == 5) {
+        println("test1 okay")
+    } else {
+        println("test1 not okay")
+    }
+    
+    n = 3
+    result = sum(n)
+    if(result == 14) {
+        println("test2 okay")
+    } else {
+        println("test2 not okay")
+    }
 }
