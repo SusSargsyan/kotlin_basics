@@ -1,17 +1,10 @@
 import kotlin.math.pow
 import kotlin.math.abs
 
-
-
-
 /**
  * Textbook - 8 problem
  */
-
-fun main() {
-    val x:Int = 5
-    val y:Int = 7
- 
+fun exercise8(x:Int, y:Int): Double {
     val part1 = x.toDouble().pow(2.0) 
     val part2 = y.toDouble().pow(2.0)
     val part3 = part2 + 4
@@ -22,6 +15,17 @@ fun main() {
     val part8 = part7.toDouble().pow(10.0)
     
     val result = part6 + part8
-    print(result)
-   
+    return result
+}
+
+fun main() {
+    var x:Int = 5
+    var y:Int = 7
+    var result1 = exercise8(x, y)
+    println(result1)
+    
+    x = 0
+    y = 0
+    var result2 = exercise8(x, y)
+    println(result2)
 }
