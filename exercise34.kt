@@ -6,8 +6,8 @@ fun sum(n:Int):Int {
     var n:Int = 10
     var sum:Int = 0
     var a:Int = 1
-    for(i in 1..11) {
-        println("${i - 1}^2 = $a")
+    for(i in 1..n) {
+       
     	a = a * 2
         sum = sum + a
     }
