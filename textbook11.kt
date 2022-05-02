@@ -4,7 +4,6 @@ import kotlin.math.sin
 import kotlin.math.cos
 import kotlin.math.log2
 
-
 /**
  * Textbook - 11 problem
  */
