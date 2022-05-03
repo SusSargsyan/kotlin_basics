@@ -4,20 +4,20 @@ import kotlin.math.log2
 import kotlin.math.abs
 import kotlin.math.tan
 
-
-
 /**
  * Textbook - 16 problem
  */
+
 fun exercise16(x:Int, a:Int, b:Int): Double {
     var result:Double = 0.0
     val cond:Double = a.toDouble().pow(2.0) + b.toDouble().pow(2.0)
     var e:Int = 1
     if(cond > 5) {
-       val part1 =  log2(x.toDouble() + a.toDouble() + b.toDouble() + 5)
-       val part2 =  a - x 
-       val part3 = 3 * e.toDouble().pow(part2)
-       result = part3 +part1
+       val part1 = (x.toDouble() + a.toDouble() + b.toDouble() + 5)
+       val part2 = log2(part1) / log2(3.0)
+       val part3 =  a - x 
+       val part4 = 3 * e.toDouble().pow(part2)
+       result = part4 +part2
         
     } else if(cond < 1) {
        val part1 = a.toDouble() + b.toDouble()
@@ -31,7 +31,6 @@ fun exercise16(x:Int, a:Int, b:Int): Double {
    
     return result
 }
-
 
 fun main() {
 	var x:Int = 4
@@ -51,5 +50,4 @@ fun main() {
     b = 1
     val result3 = exercise16(x, a, b)
     println(result3)
-    
 }
