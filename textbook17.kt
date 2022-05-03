@@ -3,14 +3,13 @@ import kotlin.math.cos
 import kotlin.math.ln
 import kotlin.math.abs
 
-
-
 /**
  * Textbook - 17 problem
  */
+
 fun exercise17(x:Int, a:Int): Double {
     var result:Double = 0.0
-    if(1 <= x && x <= 7) {
+    if(-5 <= x && x <= 5) {
         val part1 =  1 + a.toDouble().pow(2.0)
         val part2 =  part1.toDouble().pow(6.0)
         result = part2
@@ -29,24 +28,19 @@ fun exercise17(x:Int, a:Int): Double {
     return result
 }
 
-
 fun main() {
 	var x:Int = 4
     var a:Int = 3
-
     val result1 = exercise17(x, a)
     println(result1)
     
     x = 7
     a = 0
-
     val result2 = exercise17(x, a)
     println(result2)
     
     x = 9
     a = 1
-
     val result3 = exercise17(x, a)
     println(result3)
-    
 }
