@@ -1,6 +1,6 @@
 import kotlin.math.pow
 import kotlin.math.sin
-import kotlin.math.tan
+import kotlin.math.cos
 
 /**
  * Textbook - 14problem
@@ -12,7 +12,7 @@ fun exercise14(a:Int, b:Int, c:Int):Double {
         val part1 = a.toDouble().pow(2.0) 
         val part2 = b.toDouble().pow(2.0)
         val part3 = part1 + part2 + c
-        val part4 = tan(part3)
+        val part4 = cos(part3) / sin(part3)
         val part5 = part4.toDouble().pow(2.0) 
         result = part5
         
