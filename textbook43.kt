@@ -7,7 +7,7 @@ fun main() {
     val b:Int = 1
     val c:Int = 6
     val d:Int = 7
-   if(b >= 1) {
+   if(b == 1) {
           println(true)
     } else {
           println(false)
