@@ -21,7 +21,7 @@ fun main() {
     
     x = -2
     result = exercise23(x)
-    if(result == -1.0) {
+    if(result == -2.0) {
         println("test2 is okay")
     } else {
         println("test2 is not okay")
@@ -29,7 +29,7 @@ fun main() {
     
     x = -5
     result = exercise23(x)
-    if(result == -4.0) {
+    if(result == -5.0) {
         println("test3 is okay")
     } else {
         println("test3 is not okay")
