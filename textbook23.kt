@@ -2,10 +2,12 @@ import kotlin.math.pow
 
 fun exercise23(x:Int): Double {
     var result: Double = 0.0
-    if(-2 <= x && 2 >= x) {
+    if (x >= -2) {
+        result = 2.toDouble()
+    } else if(-2 <= x && 2 >= x) {
         result = -x.toDouble()
     } else {
-        result = 2.toDouble()
+        result = -2.toDouble()
     }
     return result
 }
