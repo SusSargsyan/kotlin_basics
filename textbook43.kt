@@ -7,9 +7,15 @@ fun main() {
     val b:Int = 1
     val c:Int = 6
     val d:Int = 7
-   if(b == 1) {
+   if(a == 1) {
           println(true)
+    } else if(b == 1) {
+          println(true)
+    } else if(c == 1) {
+          println(true)
+    } else if(d == 1) {
+        println(true)
     } else {
-          println(false)
+        println(false)
     }
 }
