@@ -17,6 +17,8 @@ fun main() {
     var result:Double = exercise23(x)
     if(result == 1.0) {
         println("test1 is okay")
+    } else if(result == -1.0) {
+         println("test1 is okay")
     } else {
         println("test1 is not okay")
     }
@@ -25,6 +27,8 @@ fun main() {
     result = exercise23(x)
     if(result == -2.0) {
         println("test2 is okay")
+    } else if(result == 3.0) {
+         println("test is not okay")
     } else {
         println("test2 is not okay")
     }
@@ -33,6 +37,8 @@ fun main() {
     result = exercise23(x)
     if(result == -5.0) {
         println("test3 is okay")
+    } else if(result == 2.0) {
+         println("test3 is okay")
     } else {
         println("test3 is not okay")
     }
