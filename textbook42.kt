@@ -3,17 +3,17 @@
  */
 
 fun main() {
-    val a:Int = 3
-    val b:Int = 8
-    val c:Int = 6
-    val d:Int = 7
-    if(a < b) {
+    val a:Int = 103
+    val b:Int = 102
+    val c:Int = 101
+    val d:Int = 100
+    if(a < b && a < c && a < d) {
         println(a)
-    } else if(c < a) {
-          println(c)
-    } else if(d < c) {
-          println(d)
+    } else if(b < a && b < c && b < d) {
+        println(b)
+    } else if(c < a && c < b && c < d) {
+        println(c)
     } else {
-          println(b)
+        println(d)
     }
 }
