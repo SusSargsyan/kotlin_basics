@@ -3,15 +3,15 @@
  */
 
 fun main() {
-    val a:Int = 103
-    val b:Int = 102
-    val c:Int = 101
-    val d:Int = 100
-    if(a < b && a < c && a < d) {
+    var a:Int = 99
+    var b:Int = 99
+    var c:Int = 102
+    var d:Int = 103
+    if(a <= b && a <= c && a <= d) {
         println(a)
-    } else if(b < a && b < c && b < d) {
+    } else if(b <= a && b <= c && b <= d) {
         println(b)
-    } else if(c < a && c < b && c < d) {
+    } else if(c <= a && c <= b && c <= d) {
         println(c)
     } else {
         println(d)
