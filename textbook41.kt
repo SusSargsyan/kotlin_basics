@@ -7,17 +7,13 @@ fun main() {
     val b:Int = 101
     val c:Int = 102
     val d:Int = 103
-    if(d > c) {
-        println(d)
-    } else if(c > d) {
-        println(c)
-    } else if(c > b) {
-        println(c)
-    } else if(b > c) {
-        println(b)
-    } else if(b > a) {
-        println(b)
-    } else {
+    if(a > b && a > c && a > d) {
         println(a)
+    } else if(b > a && b > c && b > d) {
+        println(b)
+    } else if(c > a && c > b && c > d) {
+        println(c)
+    } else {
+        println(d)
     }
 }
