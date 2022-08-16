@@ -3,16 +3,12 @@
  */
 
 fun main() {
-	var a:Int = 6
+    var a:Int = 6
     var b:Int = 4
     var c:Int = 1
-    if(c == 1) {
-        println("true")
-    } else if(b == 1) {
-        println("true")
-    } else if(a == 1) {
-        println("true")
+    if(a == 1 || b == 1 || c == 1) {
+        println(true)
     } else {
-        println("false")
+        println(false)
     }
 }
