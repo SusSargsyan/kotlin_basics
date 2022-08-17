@@ -2,13 +2,11 @@
  * Textbook - 40 problem
  */
 
-fun main() {  
-    var a:Int = 10
-    var b:Int = 8
-    var c:Int = 3
-    if(a >= b && b >= c) {
-        println("$a, $b, $c")
-    } else {
-        println("false")
-    }
+fun main() {
+    val a = 13
+    val b = 20
+    val c = 45
+    val numsList = listOf("$a", "$b", "$c")
+    val sortAsc = numsList.sortedDescending()
+    println(sortAsc)
 }
