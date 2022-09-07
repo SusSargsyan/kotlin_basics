@@ -2,12 +2,13 @@
  * Textbook - 50 problem
  */
 
+
 fun main() {
-    val a:Int = 2
-    val b:Int = 4
-    val c:Int = 8
-    val d:Int = 16
-    val numbers = listOf("$a", "$b", "$c", "$d")
-    val reversedNumbers = numbers.asReversed()
-    println(reversedNumbers)
+    val a = 12
+    val b = 8
+    val c = 3
+    val d = 1
+    if (a >= b && b >= c && c >= d) {
+        println("$a, $b, $c, $d")
+    }
 }
